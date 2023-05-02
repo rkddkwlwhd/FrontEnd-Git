@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="num_baseball.css"/>
+</head>
+<body>
+  <h1 class="title">Number Base Ball</h1>
+  <button class="btn" id="three-button" onclick="selectNumberLength(3)">3자리</button>
+
+  <button class="btn" id="four-button" onclick="selectNumberLength(4)"> 4자리</button>
+
+  <button class="btn" id="five-button" onclick="selectNumberLength(5);">5자리</button>
+
+  <br>
+  <input type="text" id="number" />
+  <button id="check-number" onclick="check_answer(3)">입력</button>
+  <br>
+  <table id="main-table" border="1">
+      <thead>
+        <tr>
+          <th>순서</th><th>숫자</th><th>결과</th>
+        </tr>
+      </thead>
+      <tbody id="contents-table"></tbody>  
+
+  </table>
+ <script src="num_baseball.js"></script>
+</body>
+</html>
